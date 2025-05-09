@@ -5,9 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="r.css">
+    <style>
+        @media screen and (max-width:700px){
+            img {
+                width: 100px;
+                height: auto;
+            }
+        }
+        img.center-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .photos{
+            display: flex;
+            gap: 0px;
+        }
+         table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
      
+    <script>
+          window.alert( "Welcome To our Wibsite  ")
+    </script>
+
     <div class="welcome">
         <h1 style="text-align: center;">hi</h1>
     </div><br>
@@ -39,11 +72,40 @@
             تستخدم خوارزميات الذكاء الاصطناعي في تحليل أنسجة الجسم، تحديد مناطق الخطر، وتوجيه الأدوات الجراحية بدقة عالية.</p>
     </div><br>
     
+    <div class="table">
+        <table border="3px">
+            <caption style="color: rgb(13, 18, 18);font-size: 30px;">أمثلة واقعية على استخدام الذكاء الإصطناعي في الطب</caption>
+            <thead>
+                <tr>
+                    <th>المرض</th>
+                    <th>التقنية المستخدمة</th>
+                    <th>الذكاء الاصطناعي المستخدم </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>سرطان الثدي</td>
+                    <td>  تصوير الثدي بالأشعة (Mammogram)</td>
+                    <td>دقة تجاوزت الأطباء -(Google Health)</td>
+                </tr>
+                <tr>
+                    <td>سرطان الجلد</td>
+                    <td>صور جلدية عالية الدقة</td>
+                    <td>أداء مشابه لطبيب الأمراض الجلدية - (CNN)</td>
+                </tr>
+                <tr>
+                    <td> أمراض الرئة والقلب</td>
+                    <td> تصوير (الماسح الضوئي CT ) و ( التصوير بالرنين المغناطيسي MRI) </td>
+                    <td> Arterys</td>
+                </tr>
+            </tbody>
+        </table>
 
-    div
+    </div><br>
+
     <div class="photos">
-        <img src="AI.png" width="300" height="300" >
-        <img src="AI2.jpg" width="400" height="300">
+        <img src="AI.png" width="300" height="300" alt="صورة 1" class="center-img">
+        <img src="AI2.jpg" width="400" height="300" alt="صصورة 2" class="center-img">
     </div><br>
 
     <div class="contact">
