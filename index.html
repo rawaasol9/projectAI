@@ -8,7 +8,7 @@
     <style>
         @media screen and (max-width:700px){
             img {
-                width: 100px;
+                width: 150px;
                 height: auto;
             }
         }
@@ -41,9 +41,28 @@
           window.alert( "Welcome To our Wibsite  ")
     </script>
 
-    <div class="welcome">
-        <h1 style="text-align: center;">hi</h1>
-    </div><br>
+   <div class="welcome">
+    <h1 style="text-align: center;" id="welcome-message"></h1>
+
+<script>
+    const now = new Date();
+    const hour = now.getHours();
+
+    let message = "";
+
+    if (hour >= 5 && hour < 12) {
+        message = "صباح الخير! أهلاً بك في موقعنا ";
+    } else if (hour >= 12 && hour < 17) {
+        message = "مساء الخير! نتمنى لك يوماً رائعاً ";
+    } else if (hour >= 17 && hour < 21) {
+        message = "مساء الخير! سعداء بزيارتك ";
+    } else {
+        message = "مرحباً بك! نتمنى لك ليلة سعيدة ";
+    }
+
+    document.getElementById("welcome-message").textContent = message;
+</script>
+   </div>
 
     <div class="menu">
        <ul>
@@ -108,11 +127,11 @@
         <img src="AI2.jpg" width="400" height="300" alt="صصورة 2" class="center-img">
     </div><br>
 
-    <div class="contact">
-        <h1 style="color: rgb(3, 3, 3);">لمزيد من المعلومات تواصل على :</h1>
-        <h2 style="color: rgb(13, 18, 18);">واتساب</h2>
-        <h2 style="color: rgb(13, 18, 18);">انستاغرام</h2>
-        <h2 style="color: rgb(13, 18, 18);">سناب شات</h2>
+    <div class="end">
+        <h1 style="color: rgb(3, 3, 3);">شكرا على اطلاعك لموقعنا </h1>
+        <h2 style="color: rgb(13, 18, 18);">مشروع طالبات 2/4</h2>
+        <h1>مصممة الموقع</h1>
+        <h2>رواء سعد السلمي </h2>
     </div>
 </body>
 </html>
