@@ -1,15 +1,10 @@
- var today = new Date();
- var hourtoday = today.gethours();
- var greeting;
+ const text = document.getElementById("text");
+const button = document.getElementById("toggleBtn");
 
-if (hourtoday < 12){
-    greeting ="صباح الخير";
-}
-else if (hourtoday > 12){
-    greeting ="مساء الخير";
-}
-else{
-    greeting ="wrong";
-}
+const words = ["رواء - جود خالد - ريف - لارا - لينا - لانا ","مشروع طالبات 2/4"];
+let currentIndex = 0;
 
-
+button.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % words.length;
+    text.textContent = words[currentIndex];
+});
